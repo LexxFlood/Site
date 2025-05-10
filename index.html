@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio de Albert Pereira</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Adicione scroll suave para a página */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Navegação fixa no topo */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(30, 60, 130, 0.9);
+      z-index: 1000;
+      padding: 12px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    header h2 {
+      color: white;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin-left: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover, nav a.active {
+      background-color: white;
+      color: #1e3c82;
+    }
+    /* Espaço para o header fixo */
+    main {
+      padding-top: 100px;
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+      padding-left: 24px;
+      padding-right: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    /* Seções com espaçamento */
+    section {
+      margin-bottom: 60px;
+    }
+    /* Exemplo simples para imagens e textos */
+    .section-title {
+      color: #1e3c82;
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+    }
+    .intro-grid, .block-section, .additional-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+    }
+    .intro-text, .block-content, .additional-text {
+      flex: 1 1 400px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+    .intro-img, .block-img, .additional-embed {
+      flex: 1 1 300px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    iframe {
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      color: #444;
+      background: #f7f7f7;
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #1e3c82;
+      text-decoration: underline;
+    }
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .intro-grid, .block-section, .additional-section {
+        flex-direction: column;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 12px;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Portfólio</h2>
+    <nav>
+      <a href="#intro" class="active">Introdução</a>
+      <a href="#adicionais">Adicionais</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <div class="intro-grid">
+        <div class="intro-text">
+          <h3 class="section-title">Introdução</h3>
+          <p>
+            Sou estudante de Ciência da Computação no CEUB, cursando ainda o primeiro semestre. Estou buscando conhecimento para poder empreender na área de tecnologia e criar soluções inteligentes para os mais diversos problemas.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="images/codigo.jpg" alt="Código" />
+        </div>
+      </div>
+
+      <div class="block-section" style="margin-top:40px;">
+        <div class="block-img">
+          <img src="images/faculdade.jpg" alt="Faculdade" />
+        </div>
+        <div class="block-content">
+          <h3>Faculdade</h3>
+          <p>
+            Iniciei minha jornada na computação pouco antes da faculdade, explorando inicialmente a linguagem de programação Python e, em seguida, Java. No entanto, desde o início das aulas na graduação, venho me aprofundando em C, que é a linguagem utilizada nas disciplinas do curso.
+          </p>
+        </div>
+      </div>
+
+      <div class="block-section" style="margin-top:40px; flex-direction: row-reverse;">
+        <div class="block-img">
+          <img src="images/habilidades.jpg" alt="Habilidades" />
+        </div>
+        <div class="block-content">
+          <h3>Habilidades</h3>
+          <p>
+            Sou apaixonado pelo universo do áudio. Como entusiasta de fones in-ear, valorizo cada detalhe sonoro e transformo cada momento de escuta em uma verdadeira imersão musical. Prezo tanto pela qualidade sonora quanto pela excelência na construção dos aparelhos que utilizo.
+          </p>
+        </div>
+      </div>
+
+      <div class="block-section" style="margin-top:40px;">
+        <div class="block-img">
+          <img src="images/fascinio.jpg" alt="Fascínio" />
+        </div>
+        <div class="block-content">
+          <h3>Fascínio</h3>
+          <p>
+            Sou apaixonado pelo universo do áudio. Como entusiasta de fones in-ear, valorizo cada detalhe sonoro e transformo cada momento de escuta em uma verdadeira imersão musical. Prezo tanto pela qualidade sonora quanto pela excelência na construção dos aparelhos que utilizo.
+          </p>
+        </div>
+      </div>
+
+      <div class="block-section" style="margin-top:40px; align-items: center;">
+        <div class="block-content" style="flex: 2;">
+          <h3>Apresentação</h3>
+          <p>Veja mais sobre mim na apresentação ao lado.</p>
+        </div>
+        <div class="block-img" style="flex: 1;">
+          <!-- Substitua o src pelo link do seu Google Slides -->
+          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ.../embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="adicionais" style="margin-top: 80px;">
+      <h3 class="section-title">Adicionais</h3>
+
+      <div class="additional-section">
+        <div class="additional-text">
+          <p>Usei o Google Agenda para mostrar um pouco de como organizo minha rotina. Segue um link abaixo para melhor visualização.</p>
+          <a href="https://calendar.google.com/" target="_blank" style="color:#1e3c82; font-weight:bold; text-decoration:underline;">Calendário</a>
+        </div>
+        <div class="additional-embed">
+          <iframe src="https://calendar.google.com/calendar/embed?src=albert.santos%40sempreceub.com" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+
+      <div class="additional-section" style="margin-top:40px;">
+        <div class="additional-text">
+          <p>Aqui está meu currículo. Segue também um link abaixo para melhor visualização.</p>
+          <a href="link-para-curriculo.pdf" target="_blank" style="color:#1e3c82; font-weight:bold; text-decoration:underline;">Currículo</a>
+        </div>
+        <div class="additional-embed">
+          <img src="images/curriculo.jpg" alt="Currículo" />
+        </div>
+      </div>
+
+      <div class="additional-section" style="margin-top:40px;">
+        <div class="additional-text">
+          <p>Ao lado está um vídeo com uma breve explicação sobre o meu portfólio</p>
+          <a href="https://www.youtube.com/watch?v=SEU_VIDEO" target="_blank" style="color:#1e3c82; font-weight:bold; text-decoration:underline;">Vídeo</a>
+        </div>
+        <div class="additional-embed">
+          <iframe src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>E-mail: <a href="mailto:albert7pereira@gmail.com">albert7pereira@gmail.com</a></p>
+  </footer>
+
+  <script>
+    // Script para destacar o link ativo no menu conforme a seção visível
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
