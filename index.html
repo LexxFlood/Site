@@ -6,11 +6,10 @@
   <title>Portfólio de Albert Pereira</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Adicione scroll suave para a página */
+    
     html {
       scroll-behavior: smooth;
     }
-    /* Navegação fixa no topo */
     header {
       position: fixed;
       top: 0;
@@ -40,7 +39,6 @@
       background-color: white;
       color: #1e3c82;
     }
-    /* Espaço para o header fixo */
     main {
       padding-top: 100px;
       max-width: 1100px;
@@ -50,11 +48,9 @@
       padding-right: 24px;
       box-shadow: 0 2px 12px rgba(0,0,0,0.05);
     }
-    /* Seções com espaçamento */
     section {
       margin-bottom: 60px;
     }
-    /* Exemplo simples para imagens e textos */
     .section-title {
       color: #1e3c82;
       font-weight: 600;
@@ -99,7 +95,6 @@
       color: #1e3c82;
       text-decoration: underline;
     }
-    /* Responsividade */
     @media (max-width: 768px) {
       .intro-grid, .block-section, .additional-section {
         flex-direction: column;
@@ -183,7 +178,6 @@
           <p>Veja mais sobre mim na apresentação ao lado.</p>
         </div>
         <div class="block-img" style="flex: 1;">
-          <!-- Substitua o src pelo link do seu Google Slides -->
           <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ.../embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
@@ -229,7 +223,6 @@
   </footer>
 
   <script>
-    // Script para destacar o link ativo no menu conforme a seção visível
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
 
