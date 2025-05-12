@@ -219,7 +219,6 @@ footer a {
   text-decoration: underline;
 }
 
-/* Responsivo */
 @media (max-width: 900px) {
   .header-content, .intro-grid, .block-section, .presentation-section, .additional-block {
     flex-direction: column;
